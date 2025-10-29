@@ -5,6 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: "/Gharib-Shaaban/", // 👈 أضف هذا السطر (اسم الريبو بالضبط)
   server: {
     host: "::",
     port: 8080,
