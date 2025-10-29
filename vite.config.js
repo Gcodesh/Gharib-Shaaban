@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: "/Gharib-Shaaban/", // 👈 اسم الريبو بالظبط زي ما هو على GitHub
+  base: "./", // ✅ بدل "/Gharib-Shaaban/" خليه "./"
   server: {
     host: "::",
     port: 8080,
