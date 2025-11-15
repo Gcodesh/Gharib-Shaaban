@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
 import ThemeToggle from "./ThemeToggle";
-import Image from "next/image"; // مهم جدًا في الأعلى
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,7 +32,9 @@ const Navigation = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-background/95 backdrop-blur-md border-b border-border shadow-lg" : "bg-transparent"
+        scrolled
+          ? "bg-background/95 backdrop-blur-md border-b border-border shadow-lg"
+          : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-6 py-4">
@@ -43,12 +44,10 @@ const Navigation = () => {
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className="w-12 h-12 rounded-full overflow-hidden hover:scale-105 transition-transform"
           >
-            <Image
+            <img
               src="/images/1eabc2744135c091a66f815f469b1299.png"
               alt="Profile"
-              width={48}
-              height={48}
-              className="object-cover"
+              className="w-full h-full object-cover"
             />
           </button>
 
