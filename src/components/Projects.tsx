@@ -10,7 +10,7 @@ const Projects = () => {
       tags: ["HTML", "CSS", "JavaScript"],
       demo: "https://gcodesh.github.io/BMI/",
       github: "https://github.com/gcodesh/BMI",
-      image: "/src/images/bmi.jpg", 
+      image: "/public/images/bmi.jpg", 
     },
     {
       title: "Personal Portfolio",
@@ -19,7 +19,7 @@ const Projects = () => {
       tags: ["HTML", "CSS", "JavaScript"],
       demo: "https://gcodesh.github.io/Portfiolio/",
       github: "https://github.com/gcodesh/Portfiolio",
-      image: "/src/images/poro.jpg",
+      image: "/public/images/poro.jpg",
     },
     {
       title: "Client Portfolio",
@@ -28,7 +28,7 @@ const Projects = () => {
       tags: ["HTML", "CSS", "JavaScript"],
       demo: "https://gcodesh.github.io/Kareemhegazy/",
       github: "https://github.com/gcodesh/Kareemhegazy",
-      image: "/src/images/clint.png",
+      image: "/public/images/clint.png",
     },
     {
       title: "Portfolio Builder",
@@ -37,7 +37,7 @@ const Projects = () => {
       tags: ["HTML", "CSS", "JavaScript"],
       demo: "#",
       github: "#",
-      image: "/src/images/me.png",
+      image: "/public/images/me.png",
     },
   ];
 
