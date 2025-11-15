@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
 import ThemeToggle from "./ThemeToggle";
+import Image from "next/image"; // مهم جدًا في الأعلى
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,19 +38,19 @@ const Navigation = () => {
     >
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-         <button
-  onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-  className="w-12 h-12 rounded-full overflow-hidden hover:scale-105 transition-transform"
->
-  <Image
-    src="/images/1eabc2744135c091a66f815f469b1299.png"
-    alt="Profile"
-    width={48}
-    height={48}
-    className="object-cover"
-  />
-</button>
-
+          {/* زر الصورة */}
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="w-12 h-12 rounded-full overflow-hidden hover:scale-105 transition-transform"
+          >
+            <Image
+              src="/images/1eabc2744135c091a66f815f469b1299.png"
+              alt="Profile"
+              width={48}
+              height={48}
+              className="object-cover"
+            />
+          </button>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
